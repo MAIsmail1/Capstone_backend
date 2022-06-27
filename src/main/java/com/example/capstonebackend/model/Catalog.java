@@ -1,28 +1,42 @@
 package com.example.capstonebackend.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import javax.persistence.*;
 import java.util.Set;
 
 @Entity
+@Table(name = "CATALOG")
 public class Catalog {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    private String name;
+
     @OneToMany(mappedBy = "catalog", cascade = CascadeType.ALL)
-    @JsonManagedReference(value = "catalog")
+    @JsonIgnore
     private Set<Store> stores;
 
 
 
-    public Catalog(Long id, Set<Store> stores) {
+    public Catalog(Long id, String name, Set<Store> stores) {
         this.id = id;
+        this.name = name;
         this.stores = stores;
     }
 
     public Catalog() {
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Long getId() {

@@ -1,36 +1,40 @@
 package com.example.capstonebackend.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import javax.persistence.*;
 import java.util.Set;
 
 @Entity
+@Table(name = "STORE")
 public class Store {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    private int opening;
-    private int closing;
+    private Long opening;
+    private Long closing;
     private String location;
     private String review;
 
     @OneToMany(mappedBy = "store", cascade = CascadeType.ALL)
-    @JsonManagedReference(value = "store")
+    @JsonIgnore
     private Set<Item> items;
 
     @ManyToOne
+    @JoinColumn(name = "catalog_id")
     private Catalog catalog;
 
-    public Store(Long id, String name, int opening, int closing, String location, String review, Set<Item> items) {
+    public Store(Long id, String name, Long opening, Long closing, String location, String review, Catalog catalog) {
         this.id = id;
         this.name = name;
         this.opening = opening;
         this.closing = closing;
         this.location = location;
         this.review = review;
-        this.items = items;
+        this.catalog = catalog;
     }
 
     public Store() {
@@ -52,19 +56,19 @@ public class Store {
         this.name = name;
     }
 
-    public int getOpening() {
+    public Long getOpening() {
         return opening;
     }
 
-    public void setOpening(int opening) {
+    public void setOpening(Long opening) {
         this.opening = opening;
     }
 
-    public int getClosing() {
+    public Long getClosing() {
         return closing;
     }
 
-    public void setClosing(int closing) {
+    public void setClosing(Long closing) {
         this.closing = closing;
     }
 

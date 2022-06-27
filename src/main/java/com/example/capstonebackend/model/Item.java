@@ -1,8 +1,11 @@
 package com.example.capstonebackend.model;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import javax.persistence.*;
 
 @Entity
+@Table(name = "ITEM")
 public class Item {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -10,20 +13,40 @@ public class Item {
     private String name;
     private int price;
     private int rating;
+    private String category;
     private String description;
 
     @ManyToOne
+    @JoinColumn(name = "store_id")
     private Store store;
 
-    public Item(Long id, String name, int price, int rating, String description) {
+    public Item(Long id, String name, int price, int rating, String category, String description, Store store) {
         this.id = id;
         this.name = name;
         this.price = price;
         this.rating = rating;
+        this.category = category;
         this.description = description;
+        this.store = store;
     }
 
     public Item() {
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public Store getStore() {
+        return store;
+    }
+
+    public void setStore(Store store) {
+        this.store = store;
     }
 
     public Long getId() {
