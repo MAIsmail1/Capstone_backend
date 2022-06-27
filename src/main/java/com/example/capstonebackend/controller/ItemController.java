@@ -23,7 +23,12 @@ public class ItemController {
         return ResponseEntity.ok().body(items);
     }
 
-//    @GetMapping("/items/vegetable")
+    @GetMapping("/items/vegetables")
+    public ResponseEntity<List<Item>> getAllVegetable(){
+        List<Item> vegetables = itemRepository.findAllVegetable();
+        return ResponseEntity.ok().body(vegetables);
+    }
+
 //
 //    @GetMapping("/items/wellbeing")
 //
