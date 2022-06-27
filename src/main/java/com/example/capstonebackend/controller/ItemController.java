@@ -23,6 +23,30 @@ public class ItemController {
         return ResponseEntity.ok().body(items);
     }
 
+//    @GetMapping("/items/vegetable")
+//
+//    @GetMapping("/items/wellbeing")
+//
+//    @GetMapping("/items/drinks")
+//
+//    @GetMapping("/items/dairy")
+//
+//    @GetMapping("/items/toiletries")
+//
+//    @GetMapping("/items/fruit")
+//
+//    @GetMapping("/items/bakery")
+//
+//    @GetMapping("/items/meat")
+
+
+
+
+
+
+
+
+
     @PostMapping("/items")
     public ResponseEntity<Item> createItem(@RequestBody Item item){
         Item result = itemRepository.save(item);

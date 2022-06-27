@@ -27,7 +27,7 @@ insert into item (name, price, rating, category, description, store_id) values (
 insert into item (name, price, rating, category, description, store_id) values ('Shrimp - 21/25, Peel And Deviened', 20.1, 3, 'Meat', 'Praesent blandit.', 3);
 insert into item (name, price, rating, category, description, store_id) values ('Fiddlehead - Frozen', 2.81, 3, 'Vegetable', 'Nullam molestie nibh in lectus.', 2);
 insert into item (name, price, rating, category, description, store_id) values ('Beans - Kidney, Red Dry', 22.12, 3, 'Vegetable', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 2);
-insert into item (name, price, rating, category, description, store_id) values ('Napkin White - Starched', 23.61, 3, 'Toiletry', 'In congue.', 1);
+insert into item (name, price, rating, category, description, store_id) values ('Napkin White - Starched', 23.61, 3, 'Toiletries', 'In congue.', 1);
 insert into item (name, price, rating, category, description, store_id) values ('Monkfish Fresh - Skin Off', 3.32, 3, 'Meat', 'Nulla nisl.', 1);
 insert into item (name, price, rating, category, description, store_id) values ('Bread Country Roll', 3.79, 4, 'Bakery', 'Nunc purus.', 1);
 insert into item (name, price, rating, category, description, store_id) values ('Banana Turning', 28.45, 4, 'Fruit', 'Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', 3);
@@ -35,6 +35,5 @@ insert into item (name, price, rating, category, description, store_id) values (
 insert into item (name, price, rating, category, description, store_id) values ('Beef - Top Sirloin', 29.92, 4, 'Meat', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', 2);
 insert into item (name, price, rating, category, description, store_id) values ('Bread - Pita', 8.83, 3, 'Bakery', 'Pellentesque at nulla.', 2);
 insert into item (name, price, rating, category, description, store_id) values ('Wine - Alsace Gewurztraminer', 16.68, 3, 'Drink', 'Pellentesque at nulla.', 2);
-insert into item (name, price, rating, category, description, store_id) values ('Sugar - Brown, Individual', 24.8, 3, 'HomeEssentia', 'Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', 3);
 
 
