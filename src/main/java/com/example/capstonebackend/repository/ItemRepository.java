@@ -10,4 +10,26 @@ public interface ItemRepository extends JpaRepository<Item, Long> {
 
     @Query(value = "SELECT * FROM ITEM WHERE CATEGORY = 'Vegetable'", nativeQuery = true)
     List<Item> findAllVegetable();
+
+    @Query(value = "SELECT * FROM ITEM WHERE CATEGORY = 'Wellbeing'", nativeQuery = true)
+    List<Item> findAllWellbeing();
+
+    @Query(value = "SELECT * FROM ITEM WHERE CATEGORY = 'Drink'", nativeQuery = true)
+    List<Item> findAllDrink();
+
+    @Query(value = "SELECT * FROM ITEM WHERE CATEGORY = 'Dairy'", nativeQuery = true)
+    List<Item> findAllDairy();
+
+    @Query(value = "SELECT * FROM ITEM WHERE CATEGORY = 'Toiletries'", nativeQuery = true)
+    List<Item> findAllToiletries();
+
+    @Query(value = "SELECT * FROM ITEM WHERE CATEGORY = 'Fruit'", nativeQuery = true)
+    List<Item> findAllFruit();
+
+    @Query(value = "SELECT * FROM ITEM WHERE CATEGORY = 'Bakery'", nativeQuery = true)
+    List<Item> findAllBakery();
+
+    @Query(value = "SELECT * FROM ITEM WHERE CATEGORY = 'Meat'", nativeQuery = true)
+    List<Item> findAllMeat();
+
 }
