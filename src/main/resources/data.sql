@@ -35,5 +35,31 @@ insert into item (name, price, rating, category, description, store_id) values (
 insert into item (name, price, rating, category, description, store_id) values ('Beef - Top Sirloin', 29.92, 4, 'Meat', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', 2);
 insert into item (name, price, rating, category, description, store_id) values ('Bread - Pita', 8.83, 3, 'Bakery', 'Pellentesque at nulla.', 2);
 insert into item (name, price, rating, category, description, store_id) values ('Wine - Alsace Gewurztraminer', 16.68, 3, 'Drink', 'Pellentesque at nulla.', 2);
+insert into item (name, price, rating, category, description, store_id) values ('Swiss Chard - Red', 2.98, 2, 'Vegetable', 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est.', 2);
+insert into item (name, price, rating, category, description, store_id) values ('Tomatoes - Plum, Canned', 24.91, 1, 'Vegetable', 'Nunc rhoncus dui vel sem. Sed sagittis.', 3);
+insert into item (name, price, rating, category, description, store_id) values ('Mushroom - Trumpet, Dry', 17.13, 4, 'Vegetable', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus.', 3);
+insert into item (name, price, rating, category, description, store_id) values ('Island Oasis - Pina Colada', 5.04, 1, 'Drink', 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante.', 1);
+insert into item (name, price, rating, category, description, store_id) values ('Syrup - Golden, Lyles', 10.23, 4, 'Drink', 'Mauris sit amet eros.', 1);
+insert into item (name, price, rating, category, description, store_id) values ('Berry Brulee', 28.92, 4, 'Fruit', 'In quis justo. Maecenas rhoncus aliquam lacus.', 1);
+insert into item (name, price, rating, category, description, store_id) values ('Sponge Cake Mix - Vanilla', 5.14, 2, 'Bakery', 'Vivamus in felis eu sapien cursus vestibulum.', 3);
+insert into item (name, price, rating, category, description, store_id) values ('Mushroom - Enoki, Dry', 5.64, 2, 'Vegetable', 'Aliquam quis turpis eget elit sodales scelerisque.', 3);
+insert into item (name, price, rating, category, description, store_id) values ('Cake Circle, Paprus', 6.37, 4, 'Bakery', 'In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc.', 3);
+insert into item (name, price, rating, category, description, store_id) values ('Pork - Liver', 4.76, 5, 'Meat', 'Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl.', 2);
+insert into item (name, price, rating, category, description, store_id) values ('Wine - Puligny Montrachet A.', 17.31, 3, 'Drink', 'Cras in purus eu magna vulputate luctus.', 2);
+insert into item (name, price, rating, category, description, store_id) values ('Pork - Bones', 29.61, 4, 'Meat', 'Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 2);
+insert into item (name, price, rating, category, description, store_id) values ('Broccoli', 2, 4, 'Vegetable', 'Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 2);
+insert into item (name, price, rating, category, description, store_id) values ('Strawberry', 5, 5, 'Fruit', 'Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 2);
+insert into item (name, price, rating, category, description, store_id) values ('Apple', 2, 3, 'Fruit', 'Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 2);
+insert into item (name, price, rating, category, description, store_id) values ('Passion Fruit', 1.6, 4, 'Fruit', 'Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 2);
+insert into item (name, price, rating, category, description, store_id) values ('Blue berry', 4, 4, 'Fruit', 'Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 2);
+insert into item (name, price, rating, category, description, store_id) values ('Pear', 1.3, 4, 'Fruit', 'Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 2);
+insert into item (name, price, rating, category, description, store_id) values ('Lamb', 7, 4, 'Meat', 'Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 2);
+insert into item (name, price, rating, category, description, store_id) values ('Chicken dumb stick', 5, 2, 'Meat', 'Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 2);
+insert into item (name, price, rating, category, description, store_id) values ('Dellot Hand Wash', 1.25, 2, 'Toiletries', 'Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 2);
+insert into item (name, price, rating, category, description, store_id) values ('Imperial Leather Shower Cream', 1, 3, 'Toiletries', 'Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 2);
+insert into item (name, price, rating, category, description, store_id) values ('Tampon', 1.35, 4, 'Toiletries', 'Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 2);
+insert into item (name, price, rating, category, description, store_id) values ('Large Soy Milk', 1.55, 4, 'Dairy', 'Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 2);
+insert into item (name, price, rating, category, description, store_id) values ('Greek Yoghurt', 2.20, 4, 'Dairy', 'Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 2);
+insert into item (name, price, rating, category, description, store_id) values ('Vanilla Ice Cream', 5, 4, 'Dairy', 'Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 2);
 
 
