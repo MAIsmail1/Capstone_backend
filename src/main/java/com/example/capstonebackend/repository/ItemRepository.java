@@ -3,6 +3,7 @@ package com.example.capstonebackend.repository;
 import com.example.capstonebackend.model.Item;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 
 import java.util.List;
 
@@ -31,5 +32,8 @@ public interface ItemRepository extends JpaRepository<Item, Long> {
 
     @Query(value = "SELECT * FROM ITEM WHERE CATEGORY = 'Meat'", nativeQuery = true)
     List<Item> findAllMeat();
+
+    @Query(value = "SELECT * FROM ITEM WHERE LOWER(NAME) LIKE %:searchInput%", nativeQuery = true)
+    List<Item> searchItem(@Param("searchInput") String title);
 
 }

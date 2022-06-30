@@ -2,6 +2,7 @@ package com.example.capstonebackend.controller;
 import com.example.capstonebackend.model.Item;
 import com.example.capstonebackend.repository.ItemRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
@@ -64,6 +65,15 @@ public class ItemController {
     public ResponseEntity<List<Item>> getAllMeat() {
         List<Item> meat = itemRepository.findAllMeat();
         return ResponseEntity.ok().body(meat);
+    }
+
+    @GetMapping("/search/{searchInput}")
+    public ResponseEntity<List<Item>> searchItem(@PathVariable String searchInput) {
+        if(searchInput != null){
+            return new ResponseEntity<List<Item>>(
+                    itemRepository.searchItem(searchInput), HttpStatus.OK  );
+        }
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
     @PostMapping("/items")
