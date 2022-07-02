@@ -10,8 +10,8 @@ INSERT INTO item (name, price, rating, category, description, store_id) VALUES (
 INSERT INTO item (name, price, rating, category, description, store_id) VALUES ('Mouldy Cheese', 1.60, 4, 'Dairy', 'very stinky', 1);
 INSERT INTO item (name, price, rating, category, description, store_id) VALUES ('Bread', 0.6, 1, 'Bakery', 'Really bad bread', 2);
 INSERT INTO item (name, price, rating, category, description, store_id) VALUES ('Cinnamon roll', 0.6, 2, 'Bakery', 'Really bad bread', 1);
-INSERT INTO item (name, price, rating, category, description, store_id) VALUES ('Baguette', 0.6, 2, 'Bakery', 'Really bad bread', 1);
-INSERT INTO item (name, price, rating, category, description, store_id) VALUES ('Donut', 0.6, 2, 'Bakery', 'Really bad bread', 3);
+INSERT INTO item (name, price, rating, category, description, store_id) VALUES ('Baguette', 0.6, 5, 'Bakery', 'Really bad bread', 1);
+INSERT INTO item (name, price, rating, category, description, store_id) VALUES ('Donut', 0.6, 5, 'Bakery', 'Really bad bread', 3);
 INSERT INTO item (name, price, rating, category, description, store_id) VALUES ('Razor' ,  6, 4, 'Toiletries', 'really sharp razors', 2);
 INSERT INTO item (name, price, rating, category, description, store_id) VALUES ('Sure Deodrant', 3, 5, 'Toiletries','Get the job done', 3);
 INSERT INTO item (name, price, rating, category, description, store_id) VALUES ('Toothpaste', 4, 4, 'Toiletries', 'Just a toothpaste', 3);
