@@ -15,37 +15,23 @@ public class Item {
     private int rating;
     private String category;
     private String description;
+    private String imagepath;
 
     @ManyToOne
     @JoinColumn(name = "store_id")
     private Store store;
 
-    public Item(Long id, String name, int price, int rating, String category, String description, Store store) {
+    public Item() {
+    }
+
+    public Item(Long id, String name, int price, int rating, String category, String description, String imagepath, Store store) {
         this.id = id;
         this.name = name;
         this.price = price;
         this.rating = rating;
         this.category = category;
         this.description = description;
-        this.store = store;
-    }
-
-    public Item() {
-    }
-
-    public String getCategory() {
-        return category;
-    }
-
-    public void setCategory(String category) {
-        this.category = category;
-    }
-
-    public Store getStore() {
-        return store;
-    }
-
-    public void setStore(Store store) {
+        this.imagepath = imagepath;
         this.store = store;
     }
 
@@ -81,6 +67,14 @@ public class Item {
         this.rating = rating;
     }
 
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
     public String getDescription() {
         return description;
     }
@@ -89,15 +83,19 @@ public class Item {
         this.description = description;
     }
 
-    @Override
-    public String toString() {
-        return "Item{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", price=" + price +
-                ", rating=" + rating +
-                ", description='" + description + '\'' +
-                ", store=" + store +
-                '}';
+    public String getImagepath() {
+        return imagepath;
+    }
+
+    public void setImagepath(String imagepath) {
+        this.imagepath = imagepath;
+    }
+
+    public Store getStore() {
+        return store;
+    }
+
+    public void setStore(Store store) {
+        this.store = store;
     }
 }
