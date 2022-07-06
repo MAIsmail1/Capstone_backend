@@ -18,6 +18,7 @@ public class Store {
     private Long closing;
     private String location;
     private String review;
+    private String imagepath;
     @OneToMany(mappedBy = "store", cascade = CascadeType.ALL)
     @JsonIgnore
     private Set<Item> items;
@@ -25,14 +26,23 @@ public class Store {
     public Store() {
     }
 
-    public Store(Long id, String name, Long opening, Long closing, String location, String review, Set<Item> items) {
+    public Store(Long id, String name, Long opening, Long closing, String location, String review, String imagepath, Set<Item> items) {
         this.id = id;
         this.name = name;
         this.opening = opening;
         this.closing = closing;
         this.location = location;
         this.review = review;
+        this.imagepath = imagepath;
         this.items = items;
+    }
+
+    public String getImagepath() {
+        return imagepath;
+    }
+
+    public void setImagepath(String imagepath) {
+        this.imagepath = imagepath;
     }
 
     public Long getId() {
