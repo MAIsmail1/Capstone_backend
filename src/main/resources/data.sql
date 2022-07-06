@@ -1,6 +1,6 @@
-INSERT INTO store (name, opening, closing, location, review) VALUES ('Parachute', 6, 1, 'Hammersmith', 'Poor');
-INSERT INTO store (name, opening, closing, location, review) VALUES ('One Pound Store' , 7, 23, 'White City', 'Good');
-INSERT INTO store (name, opening, closing, location, review) VALUES ('Ealing Food and Wine', 18, 7, 'Ealing', 'Satisfactory');
+INSERT INTO store (name, opening, closing, location, review, imagepath) VALUES ('Parachute', 6, 1, 'Hammersmith', 'Poor', 'Hammersmith');
+INSERT INTO store (name, opening, closing, location, review, imagepath) VALUES ('One Pound Store' , 7, 23, 'White City', 'Good', 'whitecity');
+INSERT INTO store (name, opening, closing, location, review, imagepath) VALUES ('Ealing Food and Wine', 18, 7, 'Ealing', 'Satisfactory', 'ealing');
 
 INSERT INTO item (name, price, rating, category, description, imagepath, store_id) VALUES ('Warbutons Toastie', 1.25, 3, 'Bakery', 'Thick Sliced White Bread', 'bread', 2);
 INSERT INTO item (name, price, rating, category, description, imagepath, store_id) VALUES ('Cinnamon Swirls', 0.6, 3, 'Bakery', 'Danish pastry whirls with cinnamon remonce between layers of pastry, topped with glaze', 'swirls', 1);
